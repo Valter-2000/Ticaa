@@ -11,6 +11,43 @@
 </head>
 <body>
 
+  <div id="passwordOverlay" class="password-overlay" aria-hidden="false">
+    <div id="passwordModal" class="password-modal" role="dialog" aria-modal="true" aria-labelledby="passwordTitle">
+      <h2 id="passwordTitle">Унеси лозинку</h2>
+      <p class="password-hint">(Како би се звала наша ћерка)</p>
+  
+      <form id="passwordForm" class="password-form">
+        <input
+          id="passwordInput"
+          type="password"
+          placeholder="Лозинка"
+          autocomplete="off"
+          autofocus
+        />
+        <button type="submit">Уђи</button>
+        <p id="passwordError" class="password-error" aria-live="polite">Погрешна лозинка.</p>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="intro-gate" id="introGate" aria-hidden="true">
+    <div class="intro-gate-inner">
+      <p class="intro-gate-line" id="introGateLine"></p>
+      <button class="intro-gate-btn" id="introGateBtn" type="button">Počni</button>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
   <header class="hero">
     <div class="hero-content">
       <h1>За моју Тићу ❤️</h1>
@@ -427,29 +464,6 @@
             </p>
       </div>
 
-   
-      
-
-
-
-      
-
-      <div class="card memory-group-card" data-group="romantic6">
-  <div class="six-preview">
-
-        <img src="./assets/photos/IMG_8082.JPG" alt="Наша фотографија 2">
-        <img src="./assets/photos/IMG_8083.JPG" alt="Наша фотографија 3">
-        <img src="./assets/photos/IMG_8084.JPG" alt="Наша фотографија 3">
-        <img src="./assets/photos/IMG_8085.JPG" alt="Наша фотографија 3">
-        <img src="./assets/photos/IMG_8086.JPG" alt="Наша фотографија 3">
-        <img src="./assets/photos/IMG_8087.JPG" alt="Наша фотографија 3">
-      </div>
-      <p>
-        <strong>Седам успомене у једном тренутку</strong><br>
-        Кликни на било коју да се отвори посебно.
-      </p>
-    </div>
-
 
 
     <div class="card">
@@ -528,25 +542,389 @@
 
 
 
+      <section class="chat-stack-section">
+        <div class="chat-stack-intro">
+          <p class="chat-stack-kicker">Наше речи</p>
+          <h2>Поруке које и даље чувам</h2>
+          <p>Превуци или кликни стрелице да их листаш.</p>
+        </div>
+      
+        <div class="chat-stack-wrap">
+          <button class="chat-nav prev" id="chatPrevBtn" type="button" aria-label="Prethodna poruka">‹</button>
+      
+          <div class="chat-stack-stage" id="chatStackStage">
+            <article class="chat-card is-active">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.45.38.png" alt="WhatsApp poruka 1">
+            </article>
+      
+            <article class="chat-card is-next">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.45.55.png" alt="WhatsApp poruka 2">
+            </article>
+      
+            <article class="chat-card is-back">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.46.14.png" alt="WhatsApp poruka 3">
+            </article>
+      
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.46.32.png" alt="WhatsApp poruka 4">
+            </article>
+      
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.46.49.png" alt="WhatsApp poruka 5">
+            </article>
+      
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.47.10.png" alt="WhatsApp poruka 6">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.47.57.png" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.48.26.png" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.49.16.png" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.52.09.png" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.52.56.png" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.53.42.png" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.58.35.png" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.59.33.png" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 17.01.14.png" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/Bildschirmfoto 2026-06-28 um 17.04.33.png" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/jedva cekam.png" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/PHOTO-2026-02-27-04-29-58.jpg" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/PHOTO-2026-03-16-17-33-20.jpg" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/PHOTO-2026-05-06-22-22-38.jpg" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/PHOTO-2026-05-08-16-28-49.jpg" alt="WhatsApp poruka 5">
+            </article>
+
+            <article class="chat-card is-hidden">
+              <img src="./assets/screenshots/zivot.png" alt="WhatsApp poruka 5">
+            </article>
+          </div>
+      
+          <button class="chat-nav next" id="chatNextBtn" type="button" aria-label="Sledeća poruka">›</button>
+        </div>
+      </section>
 
 
 
 
-    <section class="letter">
-      <h2>Писмо за тебе</h2>
-      <p>
-        Ја не очекујем више ништа, нити желим да те напињен за било шта. 
-        Ти си донела ту одлуку да одеш од мене и имала си своје разлоге. 
-        Ја сам сигуран да ме преварила ниси. Дубоко у свом срцу знам и верујем да си ме волела до краја. 
-        Не желим да ти кажем збогом јер те још увек волим, више него јебено икад, и не знам да ли ћу престати да те волим. 
-        <br>Хвала ти за све, хвала за сваку успомену, волео бих да сазнаш некад да нисам патетисао, стварно те волим, стварно патим.
-        Али желим ти све најбоље и морам да се помирим са тим да сам те изгубио. Иако се надам свако јутро да ћу видети твоју поруку где ми говориш да си размислила и да хоћеш да причамо.
-        <br><strong>Неисфолирано сам ти захвалан за све и желим да знаш да те још увек и заувек воли твој девели</strong>
-      </p>
-    </section>
-  </main>
 
 
+      <section class="little-things-section">
+        <div class="little-things-intro">
+          <p class="little-things-kicker">Ситнице</p>
+          <h2>Ситнице које ми недостају код тебе</h2>
+          <p>Кликни на сваки поклон.</p>
+        </div>
+      
+        <div class="little-things-grid">
+          <button class="gift-card" type="button">
+            <div class="gift-card-inner">
+              <div class="gift-card-front">
+                <div class="gift-box">
+                  <span class="gift-lid"></span>
+                  <span class="gift-ribbon-vertical"></span>
+                  <span class="gift-ribbon-horizontal"></span>
+                </div>
+                <span class="gift-open-text">Отвори</span>
+              </div>
+              <div class="gift-card-back">
+                <span class="little-thing-label">Надимак</span>
+                <p>Веверица 🐿️</p>
+              </div>
+            </div>
+          </button>
+      
+          <button class="gift-card" type="button">
+            <div class="gift-card-inner">
+              <div class="gift-card-front">
+                <div class="gift-box">
+                  <span class="gift-lid"></span>
+                  <span class="gift-ribbon-vertical"></span>
+                  <span class="gift-ribbon-horizontal"></span>
+                </div>
+                <span class="gift-open-text">Отвори</span>
+              </div>
+              <div class="gift-card-back">
+                <span class="little-thing-label">Разговори</span>
+                <p>Неке дубоке теме и твоје рамишљање, увек сам уживао да те слушам.</p>
+              </div>
+            </div>
+          </button>
+      
+          <button class="gift-card" type="button">
+            <div class="gift-card-inner">
+              <div class="gift-card-front">
+                <div class="gift-box">
+                  <span class="gift-lid"></span>
+                  <span class="gift-ribbon-vertical"></span>
+                  <span class="gift-ribbon-horizontal"></span>
+                </div>
+                <span class="gift-open-text">Отвори</span>
+              </div>
+              <div class="gift-card-back">
+                <span class="little-thing-label">Песма</span>
+                <p>Постоје песме које више не слушам исто откад их вежем за тебе.</p>
+              </div>
+            </div>
+          </button>
+      
+          <button class="gift-card" type="button">
+            <div class="gift-card-inner">
+              <div class="gift-card-front">
+                <div class="gift-box">
+                  <span class="gift-lid"></span>
+                  <span class="gift-ribbon-vertical"></span>
+                  <span class="gift-ribbon-horizontal"></span>
+                </div>
+                <span class="gift-open-text">Отвори</span>
+              </div>
+              <div class="gift-card-back">
+                <span class="little-thing-label">Поглед</span>
+                <p>Начин на који си знала да ме погледаш кад не кажеш ништа.</p>
+              </div>
+            </div>
+          </button>
+      
+          <button class="gift-card" type="button">
+            <div class="gift-card-inner">
+              <div class="gift-card-front">
+                <div class="gift-box">
+                  <span class="gift-lid"></span>
+                  <span class="gift-ribbon-vertical"></span>
+                  <span class="gift-ribbon-horizontal"></span>
+                </div>
+                <span class="gift-open-text">Отвори</span>
+              </div>
+              <div class="gift-card-back">
+                <span class="little-thing-label">Смех</span>
+                <p>Оне ситне смешне ствари које нико други не би разумео као ми.</p>
+              </div>
+            </div>
+          </button>
+
+      
+          <button class="gift-card" type="button">
+            <div class="gift-card-inner">
+              <div class="gift-card-front">
+                <div class="gift-box">
+                  <span class="gift-lid"></span>
+                  <span class="gift-ribbon-vertical"></span>
+                  <span class="gift-ribbon-horizontal"></span>
+                </div>
+                <span class="gift-open-text">Отвори</span>
+              </div>
+              <div class="gift-card-back">
+                <span class="little-thing-label">Тишина</span>
+                <p>И тишина је имала смисла кад је била са тобом.</p>
+              </div>
+            </div>
+          </button>
+
+          <button class="gift-card" type="button">
+            <div class="gift-card-inner">
+              <div class="gift-card-front">
+                <div class="gift-box">
+                  <span class="gift-lid"></span>
+                  <span class="gift-ribbon-vertical"></span>
+                  <span class="gift-ribbon-horizontal"></span>
+                </div>
+                <span class="gift-open-text">Отвори</span>
+              </div>
+              <div class="gift-card-back">
+                <span class="little-thing-label">Вожње</span>
+                <p>Мажење док мењам брзине и твоја глава на мом рамену.</p>
+              </div>
+            </div>
+          </button>
+
+          <button class="gift-card" type="button">
+            <div class="gift-card-inner">
+              <div class="gift-card-front">
+                <div class="gift-box">
+                  <span class="gift-lid"></span>
+                  <span class="gift-ribbon-vertical"></span>
+                  <span class="gift-ribbon-horizontal"></span>
+                </div>
+                <span class="gift-open-text">Отвори</span>
+              </div>
+              <div class="gift-card-back">
+                <span class="little-thing-label">Интимност</span>
+                <p>Били смо једно, ти само моја и ја само твој.</p>
+              </div>
+            </div>
+          </button>
+
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section class="letter-section">
+        <div class="letter-intro">
+          <p class="letter-kicker">За тебе</p>
+          <h2>Једно писмо само за твоје очи</h2>
+          <p class="letter-instruction">Кликни на писмо да га отвориш</p>
+        </div>
+      
+        <button class="letter-card-trigger" id="openLetterBtn" type="button">
+          <div class="letter-card-visual">
+            <div class="letter-stamp" aria-hidden="true">Умка</div>
+            <div class="wax-seal">♥</div>
+            <p class="letter-card-kicker">За моју Тићу</p>
+            <h3>Отвори писмо</h3>
+            <p class="letter-card-note">Један клик, па читај полако.</p>
+            <span class="letter-card-hint">Кликни да отвориш</span>
+          </div>
+        </button>
+      </section>
+
+
+      <section class="heart-clock-section">
+        <div class="heart-clock-intro">
+          <p class="heart-clock-kicker">Време</p>
+          <h2>Сат који и даље броји</h2>
+        </div>
+      
+        <div class="broken-heart-clock">
+          <svg class="broken-heart-svg" viewBox="0 0 600 520" aria-hidden="true">
+            <path
+              class="heart-shape"
+              d="M300 470
+                 C270 440, 90 310, 90 180
+                 C90 100, 150 50, 220 50
+                 C270 50, 305 82, 300 120
+                 C295 82, 330 50, 380 50
+                 C450 50, 510 100, 510 180
+                 C510 310, 330 440, 300 470 Z"
+            />
+            <path
+              class="heart-crack"
+              d="M315 120
+                 L285 190
+                 L320 220
+                 L292 290
+                 L328 320
+                 L300 390"
+            />
+          </svg>
+      
+          <div class="heart-clock-content">
+            <p class="heart-clock-label">Од тада прошло је</p>
+      
+            <div class="heart-digital-time">
+              <span id="days" class="time-value">000</span>
+              <span class="time-separator">:</span>
+              <span id="hours" class="time-value">00</span>
+              <span class="time-separator">:</span>
+              <span id="minutes" class="time-value">00</span>
+              <span class="time-separator">:</span>
+              <span id="seconds" class="time-value">00</span>
+            </div>
+      
+            <p class="heart-clock-meta">дана : сати : минута : секунди</p>
+          </div>
+        </div>
+      </section>
+
+
+
+      
+      <dialog id="letterModal" class="letter-modal">
+        <div class="letter-modal-shell">
+          <button id="closeLetterBtn" class="close-letter-btn" type="button" aria-label="Затвори писмо">✕</button>
+      
+          <article class="letter-paper-modal">
+            <p class="paper-kicker">За тебе, заувек</p>
+            <h3>Писмо за тебе</h3>
+      
+            <div class="paper-text">
+              <p>
+                Ја не пишем ово да бих те притискао ни да бих мењао твоју одлуку. Пишем ти јер осећам да ти дугујем искреност.
+                Знам да сам те повредио и знам да си имала своје разлоге да се удаљиш. Због тога ми је искрено жао.  </p>
+                <p>
+                Можда не могу да променим оно што је било, али могу бар да признам своје грешке и да ти кажем да ми је жао што сам био део онога што те је болело. 
+                Ја сам сигуран да ме преварила ниси. Дубоко у свом срцу знам и верујем да си ме волела до краја.
+              </p>
+      
+              <p>
+                Хвала ти за сваку успомену, за сваку ситницу, за све лепо што си ми дала и што смо имали.
+                Неке ствари ћу памтити цео живот, и увек ћу ти бити захвалан на томе.
+              </p>
+      
+              <p>
+                И даље те волим, мирно и искрено, без фолирања. Не тражим ништа на силу, само желим да знаш да је све што смо имали мени стварно значило.
+                Стварно те волим, стварно ми јесте тешко.
+                Али желим ти све најбоље и морам да се помирим са тим да сам те изгубио. 
+                Жао ми је због начина на који сам те повредио и што нисам био зрелији на крају. Сад тек схватам где сам и како погрешио.
+              </p>
+      
+              <p>
+                Не желим да ти кажем збогом јер те још увек волим, више него јебено икад,
+                и не знам да ли ћу престати да те волим. 
+                Потајно се још увек надам свако јутро да ћу видети твоју поруку где ми говориш да си размислила и да хоћеш да причамо.
+              </p>
+      
+              <p class="paper-signoff">
+                Неисфолирано сам ти захвалан за све и желим да знаш да те још увек и заувек воли твој дебели.
+              </p>
+            </div>
+          </article>
+        </div>
+      </dialog>
 
 
 
@@ -578,5 +956,45 @@
   </dialog>
 
   <script src="./script.js"></script>
+
+
+
+
+
+  <section class="whatsapp-footer-contact">
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/4917644475531"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Otvori WhatsApp chat sa mnom"
+    >
+      <svg
+        class="whatsapp-svg"
+        viewBox="0 0 32 32"
+        aria-hidden="true"
+      >
+        <path
+          fill="currentColor"
+          d="M19.11 17.23c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.31.2-.58.07-.27-.14-1.13-.42-2.15-1.34-.8-.72-1.34-1.6-1.5-1.87-.16-.27-.02-.41.12-.54.13-.13.27-.31.41-.47.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.45-.61-.46h-.52c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.14.18 1.91 2.91 4.63 4.08.65.28 1.16.45 1.56.58.66.21 1.26.18 1.73.11.53-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32Z"
+        />
+        <path
+          fill="currentColor"
+          d="M16.03 3.2c-6.98 0-12.64 5.63-12.64 12.58 0 2.22.58 4.39 1.68 6.29L3.2 28.8l6.92-1.81a12.67 12.67 0 0 0 5.91 1.5h.01c6.98 0 12.65-5.63 12.65-12.58 0-3.37-1.32-6.54-3.73-8.92A12.58 12.58 0 0 0 16.03 3.2Zm0 23.16h-.01a10.55 10.55 0 0 1-5.38-1.47l-.39-.23-4.1 1.07 1.1-4-.25-.41a10.4 10.4 0 0 1-1.61-5.54c0-5.75 4.71-10.43 10.49-10.43 2.8 0 5.43 1.08 7.41 3.04a10.33 10.33 0 0 1 3.08 7.38c0 5.75-4.71 10.43-10.48 10.43Z"
+        />
+      </svg>
+      <span class="whatsapp-text">Piši mi na WhatsApp</span>
+    </a>
+
+     
+  </section>
+
+
+
+
+
+
+
+
 </body>
 </html>
