@@ -63,27 +63,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const introMessage = "Pre nego što zatvoriš ovu stranicu... daj mi 2 minuta.";
 
   const memorySliderImages = [
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.45.38.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.45.55.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.46.14.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.46.32.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.46.49.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.47.10.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.47.57.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.48.26.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.49.16.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.52.09.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.52.56.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.53.42.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.58.35.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 16.59.33.png",
-    "./assets/screenshots/Bildschirmfoto 2026-06-28 um 17.01.14.png",
-    "./assets/screenshots/PHOTO-2026-03-03-12-25-42.jpg",
-    "./assets/screenshots/PHOTO-2026-03-12-22-03-18 2.jpg",
-    "./assets/screenshots/PHOTO-2026-03-16-17-33-20.jpg",
-    "./assets/screenshots/PHOTO-2026-05-06-22-22-38.jpg",
-    "./assets/screenshots/PHOTO-2026-05-08-16-28-49.jpg",
-    "./assets/screenshots/zivot.png"
+    "./assets/photos/IMG_8082.JPG",
+    "./assets/photos/IMG_8083.JPG",
+    "./assets/photos/IMG_8084.JPG",
+    "./assets/photos/IMG_8085.JPG",
+    "./assets/photos/IMG_8086.JPG"
   ];
 
   let currentMemorySlide = 0;
