@@ -466,3 +466,70 @@ function updateLoveCounter() {
 
 updateLoveCounter();
 setInterval(updateLoveCounter, 1000);
+
+
+function trackEvent(eventName, params = {}) {
+  if (typeof gtag === 'function') {
+    gtag('event', eventName, params);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const passwordForm = document.getElementById('passwordForm');
+  const passwordInput = document.getElementById('passwordInput');
+  const openLetterBtn = document.getElementById('openLetterBtn');
+  const playMusicBtn1 = document.getElementById('playMusicBtn1');
+  const playMusicBtn2 = document.getElementById('playMusicBtn2');
+  const whatsappBtn = document.querySelector('.whatsapp-fab');
+
+  if (passwordForm) {
+    passwordForm.addEventListener('submit', () => {
+      trackEvent('password_submitted', {
+        event_category: 'engagement',
+        event_label: 'password_overlay',
+        password_length: passwordInput ? passwordInput.value.length : 0
+      });
+    });
+  }
+
+  if (openLetterBtn) {
+    openLetterBtn.addEventListener('click', () => {
+      trackEvent('letter_opened', {
+        event_category: 'engagement',
+        event_label: 'love_letter'
+      });
+    });
+  }
+
+  if (playMusicBtn1) {
+    playMusicBtn1.addEventListener('click', () => {
+      trackEvent('music_started', {
+        event_category: 'media',
+        event_label: 'song_1'
+      });
+    });
+  }
+
+  if (playMusicBtn2) {
+    playMusicBtn2.addEventListener('click', () => {
+      trackEvent('music_started', {
+        event_category: 'media',
+        event_label: 'song_2'
+      });
+    });
+  }
+
+  if (whatsappBtn) {
+    whatsappBtn.addEventListener('click', () => {
+      trackEvent('whatsapp_clicked', {
+        event_category: 'contact',
+        event_label: 'footer_whatsapp'
+      });
+    });
+  }
+});
+
+trackEvent('password_correct', {
+  event_category: 'engagement',
+  event_label: 'site_unlocked'
+});
