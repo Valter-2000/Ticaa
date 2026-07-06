@@ -250,6 +250,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const enteredPassword = passwordInput ? passwordInput.value.trim() : "";
 
       if (validPasswords.includes(enteredPassword)) {
+        trackEvent('password_correct', {
+          event_category: 'engagement',
+          event_label: 'site_unlocked'
+        });
         unlockSite();
       } else {
         if (passwordError) passwordError.classList.add("show");
@@ -529,7 +533,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-trackEvent('password_correct', {
-  event_category: 'engagement',
-  event_label: 'site_unlocked'
-});
+
